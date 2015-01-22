@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/chris/.src/YAPYTDL'
+let g:netrw_dirhist_2='/home/chris/.kodi/addons/plugin.video.youtube'
+let g:netrw_dirhist_3='/home/chris/.src/YAPYTDL'
+let g:netrw_dirhist_4='/home/chris/.kodi/addons/plugin.video.youtube'
+let g:netrw_dirhist_5='/home/chris/.kodi/addons/script.module.simple.downloader/lib'
+let g:netrw_dirhist_6='/home/chris/.src/YAPYTDL'
