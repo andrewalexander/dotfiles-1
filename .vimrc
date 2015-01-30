@@ -18,6 +18,12 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 let g:airline_symbols.space = "\ua0"
-
 colorscheme badwolf
 let badwolf_darkgutter = 1
+
+" Shift tab for command mode and insert mode
+nmap <S-Tab> <<
+imap <S-Tab> <Esc><<i
+
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
