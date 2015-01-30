@@ -16,3 +16,6 @@
 [submodule ".vim/fonts"]
 	path = .vim/fonts
 	url = https://github.com/powerline/fonts
+[submodule ".vim/bundle/vim-bracketed-paste"]
+	path = .vim/bundle/vim-bracketed-paste
+	url = https://github.com/ConradIrwin/vim-bracketed-paste
