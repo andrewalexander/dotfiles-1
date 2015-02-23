@@ -27,3 +27,12 @@ imap <S-Tab> <Esc><<i
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" Persistent UNDO
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=1000
+set undoreload=10000
+
+" Yank, Comment, and Paste
+map <Leader>cz yy:call NERDComment(1, "toggle")<CR>p

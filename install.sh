@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+#!/usr/bin/env bash
 
 function dir_exists() {
   if [ ! -d $1 ]
