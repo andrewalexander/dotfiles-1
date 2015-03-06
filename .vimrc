@@ -35,4 +35,5 @@ set undolevels=1000
 set undoreload=10000
 
 " Yank, Comment, and Paste
-map <Leader>cz yy:call NERDComment(1, "toggle")<CR>p
+nmap <Leader>cz yy:call NERDComment(1, "toggle")<CR>p
+vmap <Leader>cz "yygv:call NERDComment(1, "toggle")<CR>`>p
