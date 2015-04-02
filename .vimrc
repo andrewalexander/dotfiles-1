@@ -1,4 +1,8 @@
-set tabstop=4 shiftwidth=4 expandtab smartindent
+set tabstop=4 shiftwidth=4 expandtab
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 imap jk <Esc>
 set number
 let mapleader = ","
@@ -29,10 +33,12 @@ imap <S-Tab> <Esc><<i
 map <C-n> :NERDTreeToggle<CR>
 
 " Persistent UNDO
-set undofile
-set undodir=$HOME/.vim/undo
-set undolevels=1000
-set undoreload=10000
+if v:version >= 730
+	set undofile
+	set undodir=$HOME/.vim/undo
+	set undolevels=1000
+	set undoreload=10000
+endif
 
 " Yank, Comment, and Paste
 nmap <Leader>cz yy:call NERDComment(1, "toggle")<CR>p
