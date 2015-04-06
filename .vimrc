@@ -33,7 +33,7 @@ imap <S-Tab> <Esc><<i
 map <C-n> :NERDTreeToggle<CR>
 
 " Persistent UNDO
-if v:version >= 730
+if v:version >= 703
 	set undofile
 	set undodir=$HOME/.vim/undo
 	set undolevels=1000
