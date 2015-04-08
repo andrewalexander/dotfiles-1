@@ -63,3 +63,7 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+" Move up and down on the same line when wraps
+nnoremap j gj
+nnoremap k gk
