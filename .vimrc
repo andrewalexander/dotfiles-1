@@ -1,9 +1,11 @@
-set tabstop=4 shiftwidth=4 expandtab
+set tabstop=4 shiftwidth=4 expandtab backspace=2
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 imap jk <Esc>
+set splitbelow
+set splitright
 set number
 let mapleader = ","
 set directory=$HOME/.vim/swap/
@@ -29,8 +31,12 @@ let badwolf_darkgutter = 1
 nmap <S-Tab> <<
 imap <S-Tab> <Esc><<i
 
+" Reselect last visual selected lines
+nnoremap <leader>v V`]
+
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.pyc$']
 
 " Persistent UNDO
 if v:version >= 703
@@ -41,5 +47,16 @@ if v:version >= 703
 endif
 
 " Yank, Comment, and Paste
-nmap <Leader>cz yy:call NERDComment(1, "toggle")<CR>p
-vmap <Leader>cz "yygv:call NERDComment(1, "toggle")<CR>`>p
+nnoremap <Leader>cz yy:call NERDComment(1, "toggle")<CR>p
+vnoremap <Leader>cz "yygv:call NERDComment(1, "toggle")<CR>`>p
+
+let g:netrw_list_hide= '.*\.swp$,.*\.pyc$'
+
+nnoremap <Leader>ev <C-w><C-v><C-l>:e $MYVIMRC<CR>
+
+" riotjs Syntax Highlighting
+au BufRead,BufNewFile *.tag :set filetype=html
+
+" Identation
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
