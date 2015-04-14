@@ -37,6 +37,7 @@ nnoremap <leader>v V`]
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.pyc$']
+let g:NERDShutUp=1
 
 " Persistent UNDO
 if v:version >= 703
@@ -61,9 +62,12 @@ au BufRead,BufNewFile *.tag :set filetype=html
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 
-" <Ctrl-l> redraws the screen and removes any search highlighting.
-nnoremap <silent> <C-l> :nohl<CR><C-l>
+" Redraw screen to remove highlighting
+nnoremap <silent> <CR> :nohl<CR><CR>
 
 " Move up and down on the same line when wraps
 nnoremap j gj
 nnoremap k gk
+
+" Easier menu access
+nnoremap ; :
