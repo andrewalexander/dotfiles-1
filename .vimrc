@@ -71,3 +71,6 @@ nnoremap k gk
 
 " Easier menu access
 nnoremap ; :
+
+" standard (javascript)
+let g:syntastic_javascript_checkers = ['standard']
