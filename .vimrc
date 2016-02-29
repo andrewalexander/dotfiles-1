@@ -60,6 +60,9 @@ imap <S-Tab> <Esc><<i
 nnoremap <silent> <leader>v gv
 vnoremap <silent> <leader>v <S-v>
 
+" Split line
+nnoremap S i<Enter><Esc>^
+
 let g:NERDShutUp=1
 
 " NERDTree
