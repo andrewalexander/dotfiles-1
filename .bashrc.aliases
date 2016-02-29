@@ -1,0 +1,9 @@
+#######################################################################
+##
+## .bashrc.aliases
+##
+## Add all aliases here
+
+
+alias ll='ls -alFh --group-directories=first'
+alias gs='git status'

@@ -104,3 +104,11 @@ autocmd BufReadPost *
 \ endif
 
 nnoremap <F9> :Dispatch make install<CR>
+
+"map <S-k> <Nop>
+
+nnoremap <Leader>py i#!/usr/bin/env python<CR># -*- coding: utf-8 -*-<CR><CR><ESC>
+
+if !empty(glob("$HOME/.vimrc.local"))
+    source $HOME/.vimrc.local
+endif

@@ -1,0 +1,8 @@
+#######################################################################
+##
+## .bashrc.default
+##
+## Default bashrc settings
+
+
+export TERM=xterm-256color
