@@ -115,3 +115,20 @@ nnoremap <Leader>py i#!/usr/bin/env python<CR># -*- coding: utf-8 -*-<CR><CR><ES
 if !empty(glob("$HOME/.vimrc.local"))
     source $HOME/.vimrc.local
 endif
+
+" Vim-go
+let g:go_auto_type_info = 1
+
+au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+au FileType go nmap <Leader>i <Plug>(go-info)
+
+" Close buffer and retain split
+nmap <silent> <leader>d :bp\|bd #<CR>
