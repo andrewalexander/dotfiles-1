@@ -68,7 +68,7 @@ set_perms() {
 }
 
 run() {
-    for f in .vimrc .vimrc.local .vim .bashrc.* .curlrc
+    for f in .vimrc .vimrc.local .vim .bashrc.* .curlrc .tmux.conf
     do
         [[ $f == *".local" ]] && continue
         create_backup $f
