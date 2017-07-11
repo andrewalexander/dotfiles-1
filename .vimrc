@@ -75,7 +75,8 @@ imap jk <Esc>
 
 " Easier menu access and remap repeat motion
 nnoremap ; :
-nnoremap <Leader>a ;
+nnoremap m ;
+nnoremap M ,,
 
 " Standard Movement
 nnoremap <C-J> <C-W><C-J>
