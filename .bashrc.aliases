@@ -4,7 +4,12 @@
 ##
 ## Add all aliases here
 
-alias ls='ls --color=auto'
+if [[ `uname` == 'Darwin' ]]; then
+	# need to `brew install coreutils` to get a proper `ls`
+	alias ls='/usr/local/bin/gls --color'
+else
+	alias ls='ls --color=auto'
+fi
 alias ll='ls -alFh --group-directories-first'
 alias gs='git status'
 alias gd='git diff'
